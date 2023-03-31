@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --index: calc(1vw + 1vh);
+  --text-white: #ffffff;
+  --text-black: #000000;
+  --text-hover: #737272;
+  --text-transparent: #959595;
+}
+@media screen and (max-width: 991px) {
+  :root {
+    --text-divider: 9;
+  }
+}
+@media screen and (min-width: 992px) {
+  :root {
+    --text-divider: 14;
+  }
+}
+@font-face {
+  font-family: Ubuntu-Bold_f;
+  src: url(../../fonts/Ubuntu-Bold.ttf);
+}
+@font-face {
+  font-family: Ubuntu-Regular_f;
+  src: url(../../fonts/Ubuntu-Regular.ttf);
+}
+html, body {
+  overflow-x: hidden; 
+}
+body {
+  font-family: Ubuntu-Regular_f;
+  background-color: rgb(255, 255, 255);
+  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
+}
+h1 {
+  font-size: calc(var(--index) * 32 / var(--text-divider));
+  letter-spacing: calc(var(--index) * 3.6 / var(--text-divider));
+  padding-left: calc(var(--index) * 3.6 / var(--text-divider)); /*compensation letter-spacing*/
+  margin: 0.67em 0;
+  font-weight: bold;
+}
+h2 {
+  font-size: calc(var(--index) * 24 / var(--text-divider));
+  letter-spacing: calc(var(--index) * 3.3 / var(--text-divider));
+  padding-left: calc(var(--index) * 3.3 / var(--text-divider)); /*compensation letter-spacing*/
+  margin: 0.83em 0;
+  font-weight: bold;
+}
+h3 {
+  font-size: calc(var(--index) * 20.8 / var(--text-divider));
+  letter-spacing: calc(var(--index) * 3.1 / var(--text-divider));
+  padding-left: calc(var(--index) * 3.1 / var(--text-divider)); /*compensation letter-spacing*/
+  margin: 1em 0;
+  font-weight: bold;
+}
+h4 {
+  font-size: calc(var(--index) * 16 / var(--text-divider));
+  letter-spacing: calc(var(--index) * 2.8 / var(--text-divider));
+  padding-left: calc(var(--index) * 2.8 / var(--text-divider)); /*compensation letter-spacing*/
+  margin: 1.33em 0;
+  font-weight: 900;
+}
+h5 {
+  font-size: calc(var(--index) * 12.8 / var(--text-divider));
+  letter-spacing: calc(var(--index) * 2.5 / var(--text-divider));
+  padding-left: calc(var(--index) * 2.5 / var(--text-divider)); /*compensation letter-spacing*/
+  margin: 1.67em 0;
+}
+h6 {
+  font-size: calc(var(--index) * 10.5 / var(--text-divider));
+  letter-spacing: calc(var(--index) * 2.2 / var(--text-divider));
+  padding-left: calc(var(--index) * 2.2 / var(--text-divider)); /*compensation letter-spacing*/
+  margin: 2.33em 0;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: Ubuntu-Bold_f;
+}
+p {
+  font-size: calc(var(--index) * 10 / var(--text-divider));
+  margin: 1.67em 0;
+  font-family: Ubuntu-Regular_f;
+}
+a {
+  text-decoration: none;
+}
+/*TEXT*/
+.text-white {
+  color: var(--text-white);
+}
+.text-black {
+  color: var(--text-black);
+}
+.text-transparent {
+  color: var(--text-transparent);
+}
+.text-bold {
+  font-weight: bold;
+}
+/*SECTIONS*/
+.row_header {
+  min-height: 85vh;
+  min-height: calc(var(--vh, 1vh) * 85);
+}
+.row_main {
+  min-height: 90vh;
+  min-height: calc(var(--vh, 1vh) * 90);
+}
+.row_min-main {
+  min-height: 50vh;
+  min-height: calc(var(--vh, 1vh) * 50);
+}
+.headerImgCircl {
+  background-size: cover;
+  background-position: center top;
+  height: calc(var(--index) * 10);
+  width: calc(var(--index) * 10);
+  border-radius: calc(var(--index) * 10 / 2);
+}
+.delimiter_line {
+  height: calc(var(--index) * .08);
+}
+.delimiter_line > hr {
+  opacity: 0.8;
+}
+.ICirl {
+  height: calc(var(--index) * 5);
+  width: calc(var(--index) * 5);
+  border-radius: calc(var(--index) * 5 / 2);
+  background-color: rgb(209, 209, 209);
+  border: calc(var(--index) * .2) solid rgba(0, 0, 0);
+}
+.ICirl > i {
+  font-size: calc(var(--index) * 1.8);
+}
+.section_shadow {
+  border-radius: 1vh;
+  box-shadow: 0 0 calc(var(--index) * .3) calc(var(--index) * .1) rgb(0, 0, 0);
+}
+.section_main {
+  background-color: #efefef;
+}
+.delimiterL {
+  border-left: calc(var(--index) * .2) solid rgba(0, 0, 0, 0.185);
+}
+.delimiterT {
+  border-top: calc(var(--index) * .2) solid rgba(0, 0, 0, 0.185);
+}
+.work {
+  transition: all 0.5s ease-in-out;
+}
+.carousel-item:hover .work {
+  transform: scale(1.1);
+}
+.carousel-item:hover .DescriptionBlock {
+  opacity: 1;
+  background-color: #000000b4;
+}
+.DescriptionBlock {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.btn-text {
+  color: var(--text-black);
+  transition: all 0.5s ease-in-out;
+}
+.btn:hover .btn-text {
+  color: var(--text-hover);
+}
+.BtnToGit {
+  background-color: white;
+  border: calc(var(--index) * .2) solid rgb(0, 0, 0);
+  border-radius: calc((var(--index) * 18 / var(--text-divider) + 4vh)/ 2);
+  transition: all 0.5s ease-in-out;
+}
+.IBtnToGit {
+  font-size: calc(var(--index) * 18 / var(--text-divider));
+  color: var(--text-black);
+  transition: all 0.5s ease-in-out;
+}
+.TBtnToGit {
+  color: var(--text-black);
+  transition: all 0.5s ease-in-out;
+}
+.BtnToGit:hover {
+  background-color: var(--text-hover);
+}
+.BtnToGit:hover .IBtnToGit {
+  color: var(--text-white);
+}
+.BtnToGit:hover .TBtnToGit {
+  color: var(--text-white);
+}
+.IContact {
+  font-size: calc(var(--index) * 18 / var(--text-divider));
+  color: var(--text-white);
+}
+.Contact:hover .IContact {
+  color: var(--text-hover);
+}
+.container-footer {
+  background-color: #000000;
+}
+.container_NavTop {
+  background-color: #ffffffdb;
+}
+.IContactB {
+  font-size: calc(var(--index) * 18 / var(--text-divider));
+  color: var(--text-black);
+}
+.Contact:hover .IContactB {
+  color: var(--text-hover);
+}
+.content {
+padding-top: 15vh;
+}
