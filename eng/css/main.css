@@ -58,19 +58,19 @@ h3 {
   margin: 1em 0;
   font-weight: bold;
 }
+.h3_NB {
+  font-size: calc(var(--index) * 20.8 / var(--text-divider));
+  letter-spacing: calc(var(--index) * 3.1 / var(--text-divider));
+  padding-left: calc(var(--index) * 3.1 / var(--text-divider)); /*compensation letter-spacing*/
+  margin: 1em 0;
+  font-family: Ubuntu-Regular_f;
+}
 h4 {
   font-size: calc(var(--index) * 16 / var(--text-divider));
   letter-spacing: calc(var(--index) * 2.8 / var(--text-divider));
   padding-left: calc(var(--index) * 2.8 / var(--text-divider)); /*compensation letter-spacing*/
   margin: 1.33em 0;
   font-weight: 900;
-}
-.h4_NB {
-  font-size: calc(var(--index) * 16 / var(--text-divider));
-  letter-spacing: calc(var(--index) * 2.8 / var(--text-divider));
-  padding-left: calc(var(--index) * 2.8 / var(--text-divider)); /*compensation letter-spacing*/
-  margin: 1.33em 0;
-  font-family: Ubuntu-Regular_f;
 }
 h5 {
   font-size: calc(var(--index) * 12.8 / var(--text-divider));
