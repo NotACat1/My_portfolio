@@ -110,9 +110,9 @@ a {
   min-height: 90vh;
   min-height: calc(var(--vh, 1vh) * 90);
 }
-.row_min-main {
-  min-height: 50vh;
-  min-height: calc(var(--vh, 1vh) * 50);
+.container_main {
+  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
 }
 .headerImgCircl {
   background-size: cover;
