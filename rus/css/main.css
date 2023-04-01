@@ -66,7 +66,7 @@ h4 {
   font-weight: 900;
 }
 .h4_NB {
-  font-size: calc(var(--index) * 20.8 / var(--text-divider));
+  font-size: calc(var(--index) * 24 / var(--text-divider));
   letter-spacing: calc(var(--index) * 2.8 / var(--text-divider));
   padding-left: calc(var(--index) * 2.8 / var(--text-divider)); /*compensation letter-spacing*/
   margin: 1.33em 0;
